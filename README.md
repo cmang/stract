@@ -16,5 +16,6 @@ It also requires Python 3.
 It is useful for CTFs, for extracting files from ROM images, etc. It is much faster than "binwalk" for extracting individual files.
 
 Credits: Sam Foster, 2022
+
 License: See LICENSE file
 
