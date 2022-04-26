@@ -44,7 +44,7 @@ def main():
     else:
         s_dd_command = "dd if=%s of=%s bs=1 skip=%i count=%i" % (s_infile, s_outfile, i_first_byte, i_file_size)
         print("Extracting bytes %i to %i (%i bytes total) from %s..." % (i_first_byte, i_last_byte, i_file_size, s_infile))
-    print(s_dd_command)
+    print("Running:", s_dd_command)
 
     # run it    
     dd_return = os.system(s_dd_command)
