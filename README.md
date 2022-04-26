@@ -1,21 +1,25 @@
-Stract
+## Stract
 
 Stract tries to make it simple to extract a range of bytes from a file and save it as a new file.
 
-syntax:
+It is useful for CTFs, for extracting files from ROM, disk and memory images, extracting hashes and certificates from binaries, and many other things. It is much faster than "binwalk" for extracting individual files. The Unix utility "dd" does the heavy lifting, so it should work on any Unix or Linux system.
 
-    stract <inputfile> <outputfile> <firstbye> <lastbyte>
+## Requirements
 
-"firstbyte" and "lastbyte" offsets can be in decimal or hex format. Prefix with 0x for hexadecimal.
+Python 3.x
 
-This program requires the program "dd" which should be preinstalled on any Unix or Linux system.
 It should work in Windows if you have "dd" installed and in the path.
 
-It also requires Python 3.
+## Usage:
 
-It is useful for CTFs, for extracting files from ROM images, etc. It is much faster than "binwalk" for extracting individual files.
+    stract inputfile outputfile firstbye [lastbyte]
 
-Credits: Sam Foster, 2022
+"firstbyte" and "lastbyte" offsets can be in decimal or hex format. Prefix with 0x for hexadecimal. Omit "lastbyte" to extract until the end of the file.
 
-License: See LICENSE file
+## Legal:
+
+BSD 3-Clause License, see LICENSE file for details.
+
+Copyright (c) 2022, Sam Foster
+All rights reserved.
 
