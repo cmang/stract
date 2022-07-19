@@ -8,9 +8,6 @@ It is useful for CTFs, for extracting files from ROM, disk and memory images, ex
 
 Python 3.x
 
-The Unix utility "dd" does the heavy lifting, so it should work out of the box on any Unix or Linux system.
-It probably works in Windows if you have "dd" installed and in the path. (Untested)
-
 ## Usage:
 
     stract inputfile outputfile firstbye [lastbyte]
@@ -19,10 +16,6 @@ Examples:
 
     $ stract logo.gif extracted.txt 0x00000048 0x00000052
     Extracting bytes 72 to 82 (11 bytes total) from logo.gif...
-    Running: dd if=logo.gif of=extracted.txt bs=1 skip=72 count=11
-    11+0 records in
-    11+0 records out
-    11 bytes copied, 0.000166698 s, 66.0 kB/s
     Wrote to file: extracted
 
 
