@@ -23,10 +23,11 @@ Examples:
 
 You can find interesting offsets to use by examining binary files in a hex editor, or with an automated tool like binwalk.
 
-## Legal:
+## Legal and Contributions:
 
 BSD 3-Clause License, see LICENSE file for details.
 
 Copyright (c) 2022, Sam Foster
 All rights reserved.
 
+Patch to replace "dd" with Python code by Hemanth Jabalpuri.
