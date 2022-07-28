@@ -10,13 +10,13 @@ Python 3.x
 
 ## Usage:
 
-    stract inputfile outputfile firstbye [lastbyte]
+    stract inputfile outputfile firstbyte [lastbyte]
 
 Examples:
 
     $ stract logo.gif extracted.txt 0x00000048 0x00000052
     Extracting bytes 72 to 82 (11 bytes total) from logo.gif...
-    Wrote to file: extracted
+    Wrote to file: extracted.txt
 
 
 "firstbyte" and "lastbyte" offsets can be in decimal or hexadecimal format. Prefix with 0x for hexadecimal. Omit "lastbyte" to extract until the end of the file.
